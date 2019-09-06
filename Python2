@@ -274,6 +274,47 @@ print(thelist.index("Ahmad"))
 
 
 
+print("----------------------------------------EXAM DAY 18 & 19--------------------------------------------------")
+
+
+
+
+# Add an item at the specified index, use the insert()method and sort it.
+
+thelist = ["Banana","Ahmad","Apple","Orange"]
+thelist.insert(4,"Arsenal")
+thelist.sort()
+print(thelist)
+
+
+print("------------------------------------------------------------------------------------------")
+
+# Extend an item at the specified index, use the extend()method.
+
+thelist = ["Banana","Ahmad","Apple","Orange"]
+thelist.extend("Ahmad")
+thelist.pop(3)
+print(thelist)
+
+print("------------------------------------------------------------------------------------------")
+
+# Reverse all item at the array, use the reverse()method.
+
+thelist = ["Banana","Ahmad","Apple","Orange"]
+thelist.reverse()
+print(thelist)
+thelist.sort()
+thelist.reverse()
+print(thelist)
+
+print("------------------------------------------EXAM------------------------------------------------")
+
+
+thelist = tuple(("Java", "Swift","C++","GO", "Python","Kotlin","C#"))
+if "Python" in thelist:
+ print("Yes, Python is in the list")
+
+
 
 
 
