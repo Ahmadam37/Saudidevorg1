@@ -315,6 +315,48 @@ if "Python" in thelist:
  print("Yes, Python is in the list")
 
 
+print("------------------------------------------------------------------------------------------")
 
+
+#A setis a collection which is unordered and unindexed. In Python setsare written with curly brackets{}.
+
+thelist2 = {"Ahmad","Ahmad",4,5,1,2}
+print(thelist2)
+
+print("------------------------------------------------------------------------------------------")
+
+#Loop through the setand print the values.
+
+theset = {1,2,3,4,5,6,"Ahmad"}
+
+for x in theset:
+    print(x)
+
+print("------------------------------------------------------------------------------------------")
+
+
+# Check if "Ahmad" is present in the set.
+
+theset1 = {"Ahmad", 1,2,34,"Saad"}
+
+print("Ahmad" in theset1)
+
+
+print("------------------------------------------------------------------------------------------")
+
+#Add an item to a set, using the add() method.
+
+theset1 = {"Ahmad",1,3,4,5}
+theset1.add("Saad")
+print(theset1)
+
+print("------------------------------------------------------------------------------------------")
+
+
+#Add multiple items to a set, using the update() method.
+
+theset1 = {"Ahamd", 1 , 3 ,4, 5}
+theset1.update(["AADS",2])
+print(theset1)
 
 
