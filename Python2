@@ -359,4 +359,51 @@ theset1 = {"Ahamd", 1 , 3 ,4, 5}
 theset1.update(["AADS",2])
 print(theset1)
 
+print("------------------------------------------------------------------------------------------")
 
+theset2 = {"Ahmad","Saad","Mohammed"}
+print(len(theset2))
+
+print("------------------------------------------------------------------------------------------")
+
+#To remove an item in a set, use the remove(),or the discard()method
+
+theset1 = {"Ahmad","Saad","Mohammed"}
+theset1.discard("Ahmad")
+theset1.remove("Saad")
+print(theset1)
+
+
+print("------------------------------------------------------------------------------------------")
+
+# The return value of the pop()method is the removed item
+theset1 = {"Ahmad","Saad","Mohammed"}
+x = theset1.pop()
+print(x)
+print(theset1)
+
+print("------------------------------------------------------------------------------------------")
+
+# The clear()method empties the set.
+
+theset1 = {"A","B","C","D"}
+theset1.clear()
+print(theset1)
+
+print("------------------------------------------------------------------------------------------")
+
+# The del keyword will delete the set completely.
+"""""
+theset = {"A","B","C","D"}
+del theset
+print(theset)
+"""""
+print("------------------------------------------------------------------------------------------")
+
+
+# Using the set()constructor to make a set
+
+theset1 = set(("Ahmad","Saad"))
+print(theset1)
+
+print("------------------------------------------------------------------------------------------")
