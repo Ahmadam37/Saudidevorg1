@@ -407,3 +407,102 @@ theset1 = set(("Ahmad","Saad"))
 print(theset1)
 
 print("------------------------------------------------------------------------------------------")
+
+
+
+# here we used the get() method to Get item from our dictionary
+thisset7 = {
+
+    "brand": "Ford",
+    "Model": "Mosser",
+    "Year":  "1994"
+}
+x = thisset7.get("Model")
+print(x)
+
+
+print("----------------------------------------------------------------------------------------")
+
+
+#Here we want to show how to change the value on our dictionary
+
+
+thislist9 = {
+    "Brand": "foard",
+    "Model": "Master",
+    "Year": "1994"
+}
+thislist9["Year"] = "1999"
+print(thislist9)
+
+print("----------------------------------------------------------------------------------------")
+
+# Here we would like to show you how to make for loop on out dictionary
+
+thisdic = {
+    "Brand": "foard",
+    "Model": "Master",
+    "Year": "1994"
+}
+
+for x in thisdic:
+    print(x)
+
+print("----------------------------------------------------------------------------------------")
+
+# Here we will show you how to make for loop to print the value in the dictionary
+
+thisdic1 = {
+    "Brand": "Foard",
+    "Model": "Master",
+    "Year": "1994"
+}
+for x in thisdic1:
+    print(thisdic1[x])
+
+print("----------------------------------------------------------------------------------------")
+
+
+# Here the other way to print values on our dictionary
+thisdic = {
+    "Brand": "A",
+    "Model": "X",
+    "Year": "E"
+}
+for x in thisdic.values():
+    print(x)
+
+print("----------------------------------------------------------------------------------------")
+
+# Here the other way to print values with using values() method on our dictionary
+thisdic = {
+    "brand": "Ahmad",
+    "Model": "Deee",
+    "year": "1998"
+}
+print(thisdic.values())
+
+
+print("----------------------------------------------------------------------------------------")
+
+
+# Here the other way to print values with practise  on our dictionary
+thisdic = {
+    "brand ->": "Foard",
+    "Model ->": "s13",
+    "year ->": "2004"
+}
+
+for x in thisdic.items():
+    print(x)
+
+print("----------------------------------------------------------------------------------------")
+
+# Here the other way to print values on our dictionary
+thisdic = {
+    "Brand-->": "Ahmad",
+    "Model-->": "Smart",
+    "Year-->": "1994"
+}
+for x,y in thisdic.items():
+    print(x,y)
