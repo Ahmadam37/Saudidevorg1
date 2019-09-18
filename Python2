@@ -506,3 +506,99 @@ thisdic = {
 }
 for x,y in thisdic.items():
     print(x,y)
+
+print("----------------------------------------------------------------------------------------")
+# Check if Key Exists : To determine if a specified keyis present in a dictionary use the in keyword
+
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "S13",
+    "year": "2003"
+}
+if "Model" in thisdic:
+    print("Yes")
+else:
+    print("No")
+
+print("-------------------------------------------------------------------------------")
+
+#Here we show you how to find the length of the dictoonary by using len() method.
+
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "SSS",
+    "Year":"2040"
+}
+print(len(thisdic))
+
+print("-------------------------------------------------------------------------------")
+
+# this is show how to add new item to our dictionary
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "sw12",
+    "Year": "1997"
+}
+thisdic["color"] = "red"
+print(thisdic)
+
+print("-------------------------------------------------------------------------------")
+
+# Here we will use the pop() method to delete item from our dictionary
+
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "Master",
+    "Year": "1989"
+}
+thisdic.pop("Model")
+print(thisdic)
+
+print("-------------------------------------------------------------------------------")
+
+# We want to show you how to remove the last item on our dictionary
+
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "STR",
+    "Year": "2009"
+}
+
+thisdic.popitem()
+print(thisdic)
+
+print("-------------------------------------------------------------------------------")
+
+# now i show you how to delete this dictionary by using this del method
+
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "Maas",
+    "Year": "2098"
+}
+del thisdic
+
+print("-------------------------------------------------------------------------------")
+
+# now i show you how to delete one item from the dictionary by using this del method
+
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "Maas",
+    "Year": "2098"
+}
+del thisdic["Brand"]
+print(thisdic)
+
+print("-------------------------------------------------------------------------------")
+
+# now i show you how to clear this dictionary by using this clear() method
+
+thisdic = {
+    "Brand": "Ahmad",
+    "Model": "Maas",
+    "Year": "2098"
+}
+thisdic.clear()
+print(thisdic)
+
