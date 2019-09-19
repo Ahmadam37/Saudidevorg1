@@ -717,3 +717,107 @@ test = {
 print(test["type"])
 test["skin cover"] = "SER"
 print(test)
+
+
+
+print("------------------------------------Day 27------------------------------------------")
+
+print("------------------------------------------------------------------------------")
+
+
+# here we will show you how to use the if statement.
+
+a = 40
+b = 30
+
+if a > b:
+
+  print("a is greater than b")
+
+else:
+    print("b is grater than a")
+
+print("------------------------------------------------------------------------------")
+
+# now i will show you how to use the elif.
+
+a = 200
+b = 200
+
+if a > b:
+    print("a greater than b")
+
+elif a==b:
+    print("a is equal b")
+
+print("------------------------------------------------------------------------------")
+
+# now i will show you how to write one line in if statement
+
+a = 40
+b = 30
+if a > b: print("a is grater than b")
+
+
+print("------------------------------------------------------------------------------")
+
+# Short Hand If: ElseIf you have only one statement to execute, one for if, and one for else, you can put it all on the same line
+
+a = 30
+b = 20
+print("A") if a>b else print("B")
+
+
+
+print("------------------------------------------------------------------------------")
+
+# You can also have multiple else statements on the same line
+
+a = 60
+
+b = 60
+
+print("A") if a > b else print("B") if a == b else print("W")
+
+
+print("------------------------------------------------------------------------------")
+
+# here i want show you how to use the and statement
+
+a = 8
+b = 6
+c = 7
+
+if a > b and c < a:
+    print("True")
+
+
+
+print("------------------------------------------------------------------------------")
+
+
+# here i want show you how to use the OR statement
+
+a = 8
+b = 6
+c = 7
+
+if a > b or c < a:
+    print("True")
+else:
+    print("False")
+
+
+print("------------------------------------------------------------------------------")
+
+
+# here i want show you how to use the Nested If statement
+
+a = 20
+
+if a > 10:
+  print("True")
+  if a > 100:
+   print("Okay")
+  else:
+      print("not")
