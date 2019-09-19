@@ -901,3 +901,52 @@ for x in fruits:
     print(x)
 
 
+print("------------------------------------------------------------------------------")
+
+"""""
+To loop through a set of code a specified number of times, we can use the range()function,
+The range()function returns a sequence of numbers, starting from 0by default, and increments
+ by 1(by default), and ends at a specified number.
+"""
+
+# How to using range function range().
+
+for x in range(6):
+    print(x)
+
+# Here in our example we will take the range of 6, and the range of 6 is from 0 to 5 like the output.
+
+print("------------------------------------------------------------------------------")
+
+# here we will make some change to our range function to specific the range between two numbers.
+
+for x in range(2,6):
+    print(x)
+
+print("------------------------------------------------------------------------------")
+
+
+# here we will make some change to our range function to specific the range between more than on numbers.
+
+
+for x in range(2,30,3):
+    print(x)
+
+print("------------------------------------------------------------------------------")
+
+# use else statement with for loop
+
+for x in range(6):
+    print(x)
+else:
+    print("Finished")
+
+print("------------------------------------------------------------------------------")
+
+# A nested loop is a loop inside a loop.
+# The "inner loop" will be executed one time for each iteration of the "outer loop"
+fruits = ["Apple","Banana", "Orange"]
+fruits2 = ["Carrot","cherry", "Orange"]
+for x in fruits:
+    for y in fruits2:
+        print(x,y)
