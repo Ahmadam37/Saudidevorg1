@@ -689,3 +689,31 @@ thisdic = dict(name = "Ahmed", Age = "25" , DOB = "1994")
 print(thisdic)
 
 
+print("--------------------------------------EXAM----------------------------------------")
+"""""
+Question 1 :
+
+We have a set, and include this set we have these values (1,3,5,7,8), please we need from you to delete the last value 
+on the set?
+"""
+print("Answer Question 1\n")
+sett = {1,3,5,7,8}
+sett.remove(8)
+print(sett)
+
+"""""
+Question 2 :
+
+Create a dictionary and list these value to dictionary  name = pigeon , type = bird, skin cover = feathers, 
+ then write code to print the type on the dictionary.Also, change the value of skin cover from "feathers" to "SER"?
+"""
+print("Answer Question 2\n")
+
+test = {
+    "name": "pigeon",
+    "type": "bird",
+    "skin cover": "feathers"
+}
+print(test["type"])
+test["skin cover"] = "SER"
+print(test)
