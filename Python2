@@ -821,3 +821,52 @@ if a > 10:
    print("Okay")
   else:
       print("not")
+
+
+print("------------------------------------------------------------------------------")
+
+# i will show you how you present the while loop
+
+i = 1
+
+while i < 6:
+    print(i)
+    i += 1
+
+print("------------------------------------------------------------------------------")
+
+# Now i will use the break Statement to stop the loop
+
+i = 2
+
+while i < 8:
+    print(i)
+    if i == 6:
+        break
+    i +=1
+
+print("------------------------------------------------------------------------------")
+
+# How to use the continue statement
+
+i = 0
+
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+
+
+print("------------------------------------------------------------------------------")
+
+# How to make else statement
+
+i = 0
+
+while i < 3:
+    i += 1
+    print(i)
+else:
+    print("Now we finished the loop")
+
