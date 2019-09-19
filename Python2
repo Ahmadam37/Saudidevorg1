@@ -870,3 +870,34 @@ while i < 3:
 else:
     print("Now we finished the loop")
 
+
+print("------------------------------------------------------------------------------")
+
+# here the for loop
+
+for x in "banana":
+    print(x)
+
+print("------------------------------------------------------------------------------")
+
+# here we use for loop with break statement
+fruits = ["Banana", "Apple", "Orange"]
+for x in fruits:
+    print(x)
+    if x == "Apple":
+        break
+    else:
+        print("Finished")
+
+
+print("------------------------------------------------------------------------------")
+
+# here we use for loop with continue statement
+
+fruits = ["Apple","Banana", "Orange"]
+for x in fruits:
+    if x == "Banana":
+        continue
+    print(x)
+
+
