@@ -950,3 +950,48 @@ fruits2 = ["Carrot","cherry", "Orange"]
 for x in fruits:
     for y in fruits2:
         print(x,y)
+
+
+print("------------------------------------------------------------------------------")
+
+# Calling a Function: To call a function, use the function name followed by parenthesis
+
+def my_function():
+    print("hello world")
+
+my_function()
+
+print("------------------------------------------------------------------------------")
+
+"""
+The following example has a function with one parameter (fname).
+ When the function is called, we pass along a first name, 
+ which is used inside the function to print the full name. 
+"""
+
+def my_function(fname):
+    print(fname + " Refsnes")
+
+my_function("Ahmad")
+my_function("Emil")
+my_function("Kosilinac")
+
+
+print("------------------------------------------------------------------------------")
+
+"""""
+Default Parameter Value:
+
+The following example shows how to use a default parameter value.
+If we call the function without parameter, it uses the default value.
+
+"""""
+
+def my_function(country = "Norway"):
+    print("i am from " + country)
+
+my_function("Brail")
+my_function("Sweden")
+my_function()
+my_function("India")
+
