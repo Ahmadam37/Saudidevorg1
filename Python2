@@ -39,26 +39,44 @@
 #
 # print("\n\nRe Example Result:")
 # try_Re(10) # Here it's mean call try_Recursion Six times.
+#
+#
+# print("------------------------------------------------------------------------")
+#
+#
+# x =lambda a, s : a *s
+# print(x(5,6))
+#
+#
+# print("------------------------------------------------------------------------")
+#
+#
+# x =lambda a, s, c: a + s + c
+# print(x(5,6,2))
+#
+#
+# print("------------------------------------------------------------------------")
+#
+#
+# x =lambda a, s : a *s
+# print(x(5,6))
+#
+
+def myfunction(n):
+    return lambda a: a * n
+
+mydoubler = myfunction(2)
+
+print(mydoubler(11))
 
 
-print("------------------------------------------------------------------------")
+def myfunction(n):
+    return lambda a: a * n
 
+mydoubler = myfunction(2)
+mytripler = myfunction(3)
+print(mydoubler(11))
+print(mytripler(11))
 
-x =lambda a, s : a *s
-print(x(5,6))
-
-
-print("------------------------------------------------------------------------")
-
-
-x =lambda a, s, c: a + s + c
-print(x(5,6,2))
-
-
-print("------------------------------------------------------------------------")
-
-
-x =lambda a, s : a *s
-print(x(5,6))
 
 
