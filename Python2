@@ -62,21 +62,31 @@
 # print(x(5,6))
 #
 
-def myfunction(n):
-    return lambda a: a * n
+# def myfunction(n):
+#     return lambda a: a * n
+#
+# mydoubler = myfunction(2)
+#
+# print(mydoubler(11))
+#
+#
+# def myfunction(n):
+#     return lambda a: a * n
+#
+# mydoubler = myfunction(2)
+# mytripler = myfunction(3)
+# print(mydoubler(11))
+# print(mytripler(11))
 
-mydoubler = myfunction(2)
 
-print(mydoubler(11))
+cars = ["Ford" , "Volvo", "BMW"]
 
-
-def myfunction(n):
-    return lambda a: a * n
-
-mydoubler = myfunction(2)
-mytripler = myfunction(3)
-print(mydoubler(11))
-print(mytripler(11))
+x = cars[0]
+print(x)
 
 
+Cars = ["Ford" , "Volvo", "BMW"]
 
+x = len(cars)
+
+print(x)
