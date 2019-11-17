@@ -1,41 +1,64 @@
+#
+# def my_func(food):
+#     for x in food:
+#         print(x)
+#
+# fruits22 = ["Apple", "banana","cherry"]
+#
+# my_func(fruits22)
+#
+#
+#
+# def myfunction(x):
+#     return 5 * x
+#
+# print(myfunction(3))
+# print(myfunction(4))
+# print(myfunction(8))
+#
+# def my__function(chaild1,chaild2,chaild3):
+#     print("The greatest chaild is" + chaild3)
+#
+#
+# my__function(chaild1="email",chaild2="Tobais",chaild3= " Linus")
+#
+#
+# def myfunction(*kids):
+#  print("The youngest child is " + kids[2])
+#
+# myfunction("email", "Tobais", "Linus")
 
-def my_func(food):
-    for x in food:
-        print(x)
-
-fruits22 = ["Apple", "banana","cherry"]
-
-my_func(fruits22)
-
-
-
-def myfunction(x):
-    return 5 * x
-
-print(myfunction(3))
-print(myfunction(4))
-print(myfunction(8))
-
-def my__function(chaild1,chaild2,chaild3):
-    print("The greatest chaild is" + chaild3)
+#
+# def try_Re(k):
+#     if(k>0):
+#         result = k+ try_Re(k-1)
+#         print(result)
+#     else:
+#         result = 0
+#     return result
+#
+# print("\n\nRe Example Result:")
+# try_Re(10) # Here it's mean call try_Recursion Six times.
 
 
-my__function(chaild1="email",chaild2="Tobais",chaild3= " Linus")
+print("------------------------------------------------------------------------")
 
 
-def myfunction(*kids):
- print("The youngest child is " + kids[2])
-
-myfunction("email", "Tobais", "Linus")
+x =lambda a, s : a *s
+print(x(5,6))
 
 
-def try_Recursion(k):
-    if(k>0):
-        result = k+ try_Recursion(k-1)
-        print(result)
-    else:
-        result = 0
-    return result
+print("------------------------------------------------------------------------")
 
-print("\n\nRecursion Example Result:")
-try_Recursion(6) # Here it's mean call try_Recursion Six times.
+
+x =lambda a, s, c: a + s + c
+print(x(5,6,2))
+
+
+print("------------------------------------------------------------------------")
+
+
+x =lambda a, s : a *s
+print(x(5,6))
+
+
