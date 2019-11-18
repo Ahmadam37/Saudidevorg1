@@ -90,3 +90,18 @@ Cars = ["Ford" , "Volvo", "BMW"]
 x = len(cars)
 
 print(x)
+
+
+
+Cars = ["Ford" , "Volvo", "BMW"]
+
+cars.append("Ahmad")
+
+print(cars)
+
+Cars = ["Ford" , "Volvo", "BMW"]
+
+cars.pop(0)
+
+print(cars)
+
