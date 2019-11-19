@@ -176,10 +176,47 @@ class mySelf:
         Myself1.age = age
 
     def myfunc(self):
-        print("Hello my name is "+ self.name + "\tand my Age is" +  self.age)
+        print("Hello my name is "+ self.name + "\tand my Age is" + self.age)
 p1 = mySelf("Ahmad" , "100")
 p1.myfunc()
 
 
 
 
+class Person:
+    def __init__(self , name , age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("Hello my name is "+ self.name)
+p1 = Person("Ahmad" , 100)
+p1.myfunc()
+
+
+
+
+
+class Person:
+    def __init__(self , name , age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("Hello my name is "+ self.name + "\tand my Age is" +  self.age)
+p1 = Person("Ahmad" , 100)
+p1.name = "Saad"
+
+print(p1.name)
+
+
+class Person:
+    def __init__(self , name , age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("Hello my name is "+ self.name + "\tand my Age is" +  self.age)
+p1 = Person("Ahmad" , 100)
+del p1.name
+print(p1.name)
