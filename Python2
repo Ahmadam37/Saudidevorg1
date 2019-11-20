@@ -282,3 +282,75 @@ x.myfunc()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Pearent:
+    def __init__(self, FirstName, LastName):
+        self.FirstName = FirstName
+        self.LastName = LastName
+
+    def printself(self):
+        print(self.FirstName, self.LastName)
+
+class Chaild(Pearent):
+    def __init__(self, FirstName, LastName):
+        super().__init__(FirstName,LastName)
+
+x = Chaild("Ahmad", "Saad")
+x.printself()
+
+
+
+
+
+class Pearent:
+    def __init__(self, FirstName, LastName):
+        self.FirstName = FirstName
+        self.LastName = LastName
+
+    def printself(self):
+        print(self.FirstName, self.LastName)
+
+class Chaild(Pearent):
+    def __init__(self, FirstName, LastName, year):
+        super().__init__(FirstName,LastName)
+        self.graduationYear = year
+
+x = Chaild("Ahmad", "Saad", 2018)
+print(x.graduationYear)
+
+
+
+
+class Pearent:
+    def __init__(self, FirstName, LastName):
+        self.FirstName = FirstName
+        self.LastName = LastName
+
+    def printself(self):
+        print(self.FirstName, self.LastName)
+
+class Chaild(Pearent):
+    def __init__(self, FirstName, LastName, year):
+        super().__init__(FirstName,LastName)
+        self.graduationYear = year
+
+    def welcome(self):
+        print("Welcome", self.FirstName, self.LastName ,"To the Class of", self.graduationYear)
+
+x = Chaild("Ahmad", "Saad", 2018)
+x.welcome()
+
+
