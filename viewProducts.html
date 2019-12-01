@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>المنتجات</title>
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .container {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navbar {
+        margin-bottom: 0px;
+    }
+</style>
+
+<div class="products-container">
+    <aside class="sidebar">
+
+        {% for category in categories %}
+        <button type="button" class="collapsible">{{ category[1] }}</button>
+        <div class="collapsible-content">
+            {% for subcategory in subcategories %}
+            {% if category[0] == subcategory[1] %}
+            <a href="{{ url_for('viewProducts', subcat_id=subcategory[0]) }}">{{ subcategory[2] }}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </aside>
+    ​
+    <div class="content">
+        {% if subcat_id is none %}
+        <h2>جميع المنتجات</h2>
+        {% else %}
+        <h2>منتجات {{ subcat_name[0] }}</h2>
+        {% endif %}
+
+
+        <div class="items-container">
+            {% for item in items %}
+            <div class="item-div">
+                <h4>{{  item[2] }}</h4>
+                <div class="img-container">
+                    <img class="item-img" src="{{  item[3] }}" alt="">
+                </div>
+                <p>السعر: <span>{{  item[4] }} SAR</span></p>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var coll = document.getElementsByClassName("collapsible");
+
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    });
+
+</script>
+
+{% endblock %}
